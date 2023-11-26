@@ -42,7 +42,7 @@ function Nv(){
          <div className="com">
          <img id="ic" src="https://cdn-icons-png.flaticon.com/128/619/619153.png" style={{cursor:"pointer"}}></img>
              <h1 id="aaa"><b style={{color:"orange"}}>BUILD</b>  HUB</h1>
-             <h1 id="a" style={{ cursor: "pointer" }} onClick={() => scrollTo("ho")}>
+             <h1 id="a" style={{ cursor: "pointer" }} onClick={() => scrollTo("hhh")}>
                  HOME
              </h1>
              <h1 id="a" style={{ cursor: "pointer" }} onClick={() => scrollTo("ab")}>
@@ -85,7 +85,7 @@ function Nv(){
          </div>
            <div className="menu2" id="menu2">
 
-              <p onClick={() => scrollTo("bt")}> HOME</p>
+              <p onClick={() => scrollTo("hhh")}> HOME</p>
                <p onClick={() => scrollTo("ab")}>ABOUT</p>
                <p onClick={() => scrollTo("oservice")}>  SERVICE</p>
                <p onClick={() => scrollTo("pp")}>   PAGES</p>

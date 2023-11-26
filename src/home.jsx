@@ -1,6 +1,6 @@
 function Ho(){
     return(
-        <div className="ho">
+        <div className="ho" id="hhh">
            <div className="cont">
 
                 <h1 className="let">DESIGN STUDIO</h1>
