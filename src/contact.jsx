@@ -40,7 +40,7 @@ const send=()=>{
                 </div>
             </div>
             <div className="footer"><h1><b>Copyright © poket all rights reserved.</b></h1>
-                <p onClick={()=>{scrollTo("let")}} >HOME</p>
+                <p onClick={()=>{scrollTo("hhh")}} >HOME</p>
                 <p onClick={()=>scrollTo("ab")}>ABOUT</p>
                 <p onClick={() => scrollTo("kkk")}>PROFILE</p>
             </div>
