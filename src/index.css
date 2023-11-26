@@ -1,0 +1,760 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  overflow: hidden;
+}
+.nav {
+  position: fixed;
+  top: 0; /* Stick to the top */
+  
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  z-index: 1000; /* Adjusted z-index value */
+  box-shadow: 1px 1px 1px 5px  whitesmoke;
+}
+
+.com {
+  position: relative;
+  display: flex;
+  height: 90px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 10px;
+  z-index: 1001; /* Adjusted z-index value */
+  
+ 
+}
+
+.menu {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  border: 2px solid whitesmoke;
+  float: right;
+  margin-right: 200px;
+  position: relative;
+  top: -15px;
+  right: -150px;
+  display: none;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  z-index: 1000; /* Adjusted z-index value */
+}
+
+#ic {
+  padding: 20px;
+  height: 50px;
+  margin-left: 50px;
+}
+
+#a {
+  padding: 20px;
+  position: relative;
+  right: -400px;
+}
+#aaa{
+  padding: 20px;
+}
+#b {
+  height: 30px;
+  padding: 30px;
+  position: relative;
+  right: -880px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#co {
+  position: relative;
+  right: -110px;
+  top: 30px;
+  font-size: 30px;
+  border-bottom: 3px solid orange;
+}
+
+#te {
+  margin: 10px;
+}
+
+#add {
+  margin: 0px;
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+}
+
+#pin {
+  padding-left: 140px;
+  height: 30px;
+}
+
+#tele {
+  display: flex;
+}
+
+.ico {
+  display: flex;
+  position: relative;
+  left: 100px;
+}
+
+.ico img {
+  padding: 20px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.ho {
+  height: 1100px;
+  background-image: url(https://wallpaperaccess.com/full/1700233.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont {
+  position: relative;
+  left: 800px;
+  top: 140px;
+  width: 50%;
+  color: white;
+  font-size: 40px;
+}
+
+#let {
+  font-size: 70px;
+  color: white;
+  margin: 0px;
+}
+
+
+#bt {
+  font-size: 25px;
+  height: 80px;
+  width: 220px;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+#bt:hover {
+ background: linear-gradient(90deg, orange, white);
+  color: black;
+  background-size: 200% 100%;
+  transition: background-position 0.5s;
+  animation: slide 6s infinite;
+}
+
+
+@keyframes slide {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+#ab {
+  height: 700px;
+  border: 2px solid black;
+  background-color: black;
+ 
+  color: white;
+}
+#one{
+  font-size: 40px;
+  color: orange;
+  margin-left: 180px;
+}
+#two{
+  font-size: 50px;
+  margin-left: 180px;
+}
+#bed{
+  float: right;
+  height: 300px;
+  position: relative;
+  top: -280px;
+  right: 50px;
+}
+.cards{
+  display: flex;
+  margin: 200px;
+  
+  height: 400px;
+  width: 1300px;
+  position: relative;
+  top: -180px;
+  overflow: hidden;
+}
+.card-container {
+  display: flex;
+  overflow: hidden;
+}
+.card {
+  font-size: 30px;
+  margin: 20px;
+  border: 2px solid white;
+  height: 350px;
+  width: 400px;
+  background-color: white;
+  color: black;
+  transform: scale(0.8);
+  animation: scaleIn 10s ease-out forwards infinite; /* Adjust the duration and easing as needed */
+}
+
+.card img {
+  padding: 40px;
+  height: 150px;
+}
+
+@keyframes scaleIn {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.sec{
+  display: flex;
+  height: 800px;
+ 
+}
+#img-sec{
+  width: 50%;
+ 
+  margin-top: -20px;
+}
+#write-sec{
+  width: 50%;
+
+}
+#img-sec i{ 
+  position: relative;
+  top: 150px;
+  left: 100px;
+  height: 200px;
+ margin: 10px;
+ 
+}
+#count{
+  z-index: 6;
+  margin: 0px;
+  
+  height: 200px;
+  width: 300px;
+  position: relative;
+  left: 250px;
+  top: 150px;
+  background-color: orange;
+  color: white;
+}
+#img1{
+  position: relative;
+  top: 190px;
+  left: 100px;
+  height: 200px;
+ margin: 10px;
+ 
+}
+#img2{
+  position: relative;
+  top: 200px;
+  left: 100px;
+  height: 200px;
+ margin: 10px;
+ 
+}
+#img3{
+  position: relative;
+  top: 100px;
+  left: 100px;
+  height: 200px;
+ margin: 10px;
+ 
+}
+#img4{
+  position: relative;
+  top: 120px;
+  left: 100px;
+  height: 200px;
+ margin: 10px;
+ 
+}
+#no{
+  position: relative;
+  top: 20px;
+  padding-left: 70px;
+  margin: 0px;
+  font-size: 80px;
+}
+#ex{
+  padding-left: 20px;
+  font-size: 25px;
+}
+#our{
+  color: orange;
+  margin-left: 30px;
+  padding-top: 180px;
+  font-size: 20px;
+}
+#we{
+  margin-bottom: -20px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+#wee{
+  padding-top: 20px;
+  margin-left: 30px;
+}
+ol{
+  font-size: 18px;
+}
+.cont p{
+  padding-top: 10px;
+}
+#left-a{
+  float: right;
+  height: 150px;
+  position: relative;
+  top: -170px;
+  right: 400px;
+}
+.service{
+  height: 750px;
+  background-color: whitesmoke;
+}
+#oservice{
+  padding-top: 60px;
+  font-size: 25px;
+  margin: 0px;
+  color: orange;
+}
+#odetail{
+  margin: 0px;
+  font-size: 40px;
+}
+.sercards{
+  display: flex;
+  margin-top: 10px;
+  width: 1600px;
+  height: 420px;
+  
+}
+#sercard{
+  margin: 50px;
+  height: 450px;
+  width: 500px;
+ 
+  background-color: white;
+}
+#sercard img{
+  padding-top: 40px;
+ height: 150px;
+}
+#sercard p{
+  font-size: 22px;
+}
+#sercard ol{
+  font-size: 18px;
+  margin: 0px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+  padding-bottom: 30px;
+}
+.pages{
+  height: 700px;
+  border-bottom: 5px solid whitesmoke;
+}
+.pages-in{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 170px;
+  height: 600px;
+  width: 1500px;
+
+}
+.pwrite{
+  width: 50%;
+
+  height: 100%;
+}
+.pimg{
+  width: 50%;
+
+  height: 100%;
+}
+#pp{
+  color: orange;
+  font-size: 25px;
+}
+.pwrite h1{
+  margin: 5px;
+  font-size: 45px;
+}
+.tick{
+  display: flex;
+}
+.tick img{
+  margin-left: 30px;
+  height: 120px;
+}
+.tick p{
+  margin-left: 30px;
+}
+.pimg img{
+  height: 100%;
+  width: 100%;
+}
+.blog{
+  margin: 0px;
+  height: 1130px;
+  border: 2px solid black;
+  background: black;
+}
+.logo{
+ height: 280px;
+  border: 2px solid black;
+
+  background-color: black;
+}
+.logo p{
+  margin-bottom: 40px;
+  color: orange;
+  font-size: 35px;
+}
+#under{
+ display: inline-block;
+  border-bottom:2px solid white;
+
+}
+.logoo{
+  position:relative;
+  top: -30px;
+  display: flex;
+  width: 1700px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+.logoo img {
+  height: 160px;
+  opacity: 0; /* Start with all images hidden */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.logoo img.active {
+  opacity: 1; /* Make the active image visible */
+}
+
+@keyframes hideShow {
+  0%, 20%, 100% {
+    opacity: 0.5; /* Hide the images at the beginning, 20%, and end of the animation */
+  }
+  30%, 90% {
+    opacity: 1; /* Show the images at 30% and 90% of the animation */
+  }
+}
+
+.logoo {
+  display: flex;
+  justify-content: center;
+}
+.logoo img:nth-child(1) {
+  animation: hideShow 7s infinite 3s; /* Adjust the duration and delay as needed */
+}
+
+.logoo img:nth-child(2) {
+  animation: hideShow 7s infinite 2s; /* Delay the animation of the second image by 2 seconds */
+}
+
+.logoo img:nth-child(3) {
+  animation: hideShow 7s infinite 3s; /* Delay the animation of the third image by 4 seconds */
+}
+
+.logoo img:nth-child(4) {
+  animation: hideShow 7s infinite 2s; /* Delay the animation of the fourth image by 6 seconds */
+}
+
+.logoo img:nth-child(5) {
+  animation: hideShow 7s infinite 3s; /* Delay the animation of the fifth image by 8 seconds */
+}
+
+.logoo img:nth-child(6) {
+  animation: hideShow 7s infinite 2s; /* Delay the animation of the sixth image by 10 seconds */
+}
+
+.logoo img:nth-child(7) {
+  animation: hideShow 7s infinite 3s; /* Delay the animation of the seventh image by 12 seconds */
+}
+.profile{
+  /*border: 5px solid aquamarine;*/
+  border-radius: 15px;
+ /* box-shadow: 1px 1px 50px mediumaquamarine;*/
+  width: 544.22px;
+  height: 600px;
+overflow: hidden;
+  position: relative;
+  top: -100px;
+  animation: glow 15s infinite ease;
+}
+@keyframes glow {
+  0%{
+    border: 5px solid aquamarine;
+    box-shadow: 1px 1px 50px mediumaquamarine;
+  }
+  35%{
+    border: 5px solid red;
+    box-shadow: 1px 1px 50px red;
+  }
+  50%{
+    border: 5px solid purple;
+    box-shadow: 1px 1px 50px purple;
+  }
+  75%{
+    border: 5px solid deeppink;
+    box-shadow: 1px 1px 50px deeppink;
+  }
+  100%{
+    border: 5px solid greenyellow;
+    box-shadow: 1px 1px 50px greenyellow;
+  }
+}
+
+.profile img{
+  position: relative;
+    height: 600px;
+  border-radius: 15px;
+  z-index: 0;
+}
+#proin{
+  position: relative;
+  top: -160px;
+  right: 180px;
+  height: 600px;
+ width: 900px;
+  border-radius: 50%;
+  z-index: 1;
+  background: white;
+  opacity: 0.9;
+}
+#proin img{
+  height: 60px;
+  position: relative;
+  right: -130px;
+  top: -30px;
+}
+#proin b{
+  position: relative;
+  top: 20px;
+  left: -20px;
+  font-size: 40px;
+  border-bottom: 4px dashed black;
+  animation: chng 15s  infinite ease;
+}
+#found{
+  font-size: 70px;
+  position: relative;
+  left: -280px;
+  z-index: 2;
+
+}
+#hk{
+  position: relative;
+  top: -10px;
+  animation: chng 15s  infinite ease;
+}
+@keyframes chng {
+  0% {
+
+    color: mediumaquamarine;
+  }
+  35% {
+
+    color: red;
+  }
+  50% {
+
+    color: purple;
+  }
+  75% {
+
+    color: deeppink;
+  }
+  100% {
+
+    color: greenyellow;
+  }
+}
+#ceo{
+  display: flex;
+  position: relative;
+  left: 800px;
+}
+#ce{
+  font-size: 70px;
+  position: relative;
+  left: -160px;
+  color: white;
+  z-index: 2;
+}
+#and {
+  margin: 0px;
+  font-size: 280px;
+  position: relative;
+  left: -150px;
+  top: -90px;
+  z-index: 1;
+  opacity: 0.5;
+  background: linear-gradient(60deg, deeppink,purple);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.list{
+  margin-top:-10px;
+  height: 700px;
+
+  background-color: white;
+}
+.list p{
+  font-size: 20px;
+  color: orange;
+}
+.list h1{
+  margin-top: -10px;
+ font-size: 40px;
+}
+.listt{
+
+  width: 1000px;
+  height: 400px;
+
+  position: relative;
+  left: 400px;
+  top: 40px;
+  display: flex;
+  overflow-inline: auto;
+}
+
+
+.album{
+  height: 400px;
+  width: 800px;
+
+  position: relative;
+  left: 60px;
+}
+.album img{
+  height: 400px;
+  width: 800px;
+}
+#left{
+  height: 50px;
+  position: relative;
+  left: 4%;
+  top: 50%;
+}
+#right{
+  height: 50px;
+  position: relative;
+  top: 50%;
+  right: -8%;
+}
+.Co{
+  height: 450px;
+  border: 2px solid white;
+  background-image: url("https://yesofcorsa.com/wp-content/uploads/2019/05/4K-Landscape-Scenery-Wallpaper-HQ.jpg");
+  background-size: cover;
+  color:orange;
+  margin-left: -10px;
+
+}
+.bl{
+  height: 350px;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  overflow: hidden;
+}
+.bl-in{
+  position: relative;
+  right: -25%;
+  top: 50px;
+}
+.bl-in b{
+   font-size: 30px;
+}
+.bl-in p{
+  font-size: 20px;
+}
+.bl-inn{
+  position: relative;
+  right: -30%;
+  top: 50px;
+}
+.bl-inn b{
+  font-size: 30px;
+}
+.bl-inn p{
+  font-size: 20px;
+}
+.footer{
+ display: flex;
+  height: 105px;
+  background-color: black;
+  margin-top: 0px;
+  color: white;
+
+}
+.footer p:hover{
+  color: orange;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.footer p{
+  position: relative;
+  right:-45%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer h1{
+  padding-left: 120px;
+  font-size: 30px;
+  color: orange;
+}
+
+.bl-logo img{
+  height: 120px;
+
+}
+.bl-logo{
+  position: relative;
+  right: -20%;
+  top: 40px;
+}
+#a:hover{
+  color: orange;
+}
+.vide{
+  height: 600px;
+}
