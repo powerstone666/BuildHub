@@ -1,7 +1,16 @@
+import {animateScroll as scroll} from "react-scroll";
 
 
 function Co() {
-
+const send=()=>{
+    window.location.href="https://mail.google.com/mail/u/0/#inbox?compose=new";
+}
+    const scrollTo = (elementId) => {
+        scroll.scrollTo(document.getElementById(elementId).offsetTop - 50, {
+            duration: 500,
+            smooth: 'easeInOutQuad',
+        });
+    };
 
     return(
         <div className="Co" id="Co">
@@ -26,14 +35,14 @@ function Co() {
                     <p >📞 +916361247856</p>
                     <p>📩 imranpasha8225@gmail.com</p>
 
-                    <input  type={"email"} placeholder="email"></input>
-                        <button style={{cursor:"pointer"}}>Send</button>
+                     <input  type={"email"} placeholder="email"></input>
+                        <button style={{cursor:"pointer"}} onClick={send}>Send</button>
                 </div>
             </div>
             <div className="footer"><h1><b>Copyright © poket all rights reserved.</b></h1>
-                <p >HOME</p>
-                <p>ABOUT</p>
-                <p>PRICING</p>
+                <p onClick={()=>{scrollTo("let")}} >HOME</p>
+                <p onClick={()=>scrollTo("ab")}>ABOUT</p>
+                <p onClick={() => scrollTo("kkk")}>PROFILE</p>
             </div>
         </div>
     );

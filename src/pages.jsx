@@ -6,7 +6,7 @@ function Page()
             <section className="pwrite">
                 <p id="pp"><b>WHY CHOOSE US</b></p>
                 <h1>PROVIDING FULL RANGE<br></br> OF HIGH QUALITY.</h1>
-                <p style={{fontSize:"20px"}}>Each color evokes different emotions for each individual. Your emotions<br></br> still depend on your individual life experience.</p>
+                <p >Each color evokes different emotions for each individual. Your emotions<br></br> still depend on your individual life experience.</p>
                 <br></br>
                 <div className="tick">
                     <img src="https://cdn-icons-png.flaticon.com/128/5253/5253968.png" style={{cursor:"pointer"}}></img>

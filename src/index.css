@@ -5,7 +5,7 @@ html, body {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-  overflow: hidden;
+  overflow:hidden;
 }
 .nav {
   position: fixed;
@@ -30,6 +30,13 @@ body{
   
  
 }
+.small{
+  height: 30px;
+  padding: 30px;
+  position: relative;
+  visibility: hidden;
+
+}
 
 .menu {
   background-color: white;
@@ -47,7 +54,26 @@ body{
   animation: fadeIn 1s ease-in forwards;
   z-index: 1000; /* Adjusted z-index value */
 }
-
+.menu2 {
+  background-color: white;
+  height: 230px;
+  width: 150px;
+  border: 2px solid whitesmoke;
+  float: right;
+  margin-right: 200px;
+  position: relative;
+  top: -25px;
+  right: -90px;
+  display: none;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  z-index: 1000; /* Adjusted z-index value */
+  visibility: hidden;
+}
+.menu2 p{
+  text-align: center;
+}
 #ic {
   padding: 20px;
   height: 50px;
@@ -123,6 +149,7 @@ body{
   background-image: url(https://wallpaperaccess.com/full/1700233.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .cont {
@@ -132,9 +159,10 @@ body{
   width: 50%;
   color: white;
   font-size: 40px;
+  text-align: center;
 }
 
-#let {
+.let {
   font-size: 70px;
   color: white;
   margin: 0px;
@@ -248,7 +276,7 @@ body{
   width: 50%;
 
 }
-#img-sec i{ 
+#img-sec i{
   position: relative;
   top: 150px;
   left: 100px;
@@ -323,6 +351,7 @@ body{
   font-size: 25px;
 }
 #wee{
+  font-size: 20px;
   padding-top: 20px;
   margin-left: 30px;
 }
@@ -412,6 +441,9 @@ ol{
   margin: 5px;
   font-size: 45px;
 }
+.pwrite p{
+  font-size: 20px;
+}
 .tick{
   display: flex;
 }
@@ -428,7 +460,7 @@ ol{
 }
 .blog{
   margin: 0px;
-  height: 1130px;
+  height: 1250px;
   border: 2px solid black;
   background: black;
 }
@@ -506,6 +538,7 @@ ol{
 .logoo img:nth-child(7) {
   animation: hideShow 7s infinite 3s; /* Delay the animation of the seventh image by 12 seconds */
 }
+
 .profile{
   /*border: 5px solid aquamarine;*/
   border-radius: 15px;
@@ -514,7 +547,7 @@ ol{
   height: 600px;
 overflow: hidden;
   position: relative;
-  top: -100px;
+  top: -140px;
   animation: glow 15s infinite ease;
 }
 @keyframes glow {
@@ -546,7 +579,7 @@ overflow: hidden;
   border-radius: 15px;
   z-index: 0;
 }
-#proin{
+.proin{
   position: relative;
   top: -160px;
   right: 180px;
@@ -557,20 +590,46 @@ overflow: hidden;
   background: white;
   opacity: 0.9;
 }
-#proin img{
+
+#lin{
   height: 60px;
   position: relative;
-  right: -130px;
-  top: -30px;
+  right: 5px;
+  top: -60px;
+  visibility: visible;
+  transition: all 0.3s ease;
+
 }
-#proin b{
+#ibox:hover #lin{
+  right: 5px;
+  top: -120px;
+}
+#ibox{
+
+  height: 60px;
+  width: 60px;
+  margin: 0px;
   position: relative;
-  top: 20px;
-  left: -20px;
+  top: -40px;
+}
+
+
+.proin b{
+  position: relative;
+  top: -30px;
+  left: -10px;
   font-size: 40px;
   border-bottom: 4px dashed black;
   animation: chng 15s  infinite ease;
 }
+#hub{
+  height: 60px;
+  position: relative;
+  right: 5px;
+  top: 5px;
+
+}
+
 #found{
   font-size: 70px;
   position: relative;
@@ -580,7 +639,8 @@ overflow: hidden;
 }
 #hk{
   position: relative;
-  top: -10px;
+  top: -60px;
+  font-weight: 500;
   animation: chng 15s  infinite ease;
 }
 @keyframes chng {
@@ -609,6 +669,7 @@ overflow: hidden;
   display: flex;
   position: relative;
   left: 800px;
+  top: -50px;
 }
 #ce{
   font-size: 70px;
@@ -636,6 +697,7 @@ overflow: hidden;
   background-color: white;
 }
 .list p{
+
   font-size: 20px;
   color: orange;
 }
@@ -755,6 +817,388 @@ overflow: hidden;
 #a:hover{
   color: orange;
 }
-.vide{
-  height: 600px;
+.video{
+  height: 500px;
+  background:url("https://th.bing.com/th/id/R.bca656519e3cf77cd8a2cdeb5b41d9b6?rik=l4HgWR4J05Co2Q&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fhouse-on-mountains-art.jpg&ehk=0vIJZ9YCMQGJGta5aCqH0PUYNUJFfHCNOx8tSQdUSbM%3d&risl=1&pid=ImgRaw&r=0");
+  background-size: cover;
+}
+.video video{
+  height: 500px;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+@media  screen and (max-width: 900px) {
+
+
+
+
+
+  html,body{
+
+  }
+  .com{
+    display: flex;
+  }
+  #ic{
+    position: relative;
+    left:-50px;
+  }
+  #a{
+    display:none;
+  }
+
+  #aaa{
+    position: relative;
+    left: -80px;
+  }
+  .ho{
+    max-height:700px;
+
+  }
+  .cont{
+text-align: left;
+  }
+  .cont p{
+
+    font-size: 30px;
+    position: relative;
+    left:-750px
+
+  }
+  .let{
+    font-size: 40px;
+    position: relative;
+    left:-750px
+
+  }
+  #bt{
+    font-size: 20px;
+    position: relative;
+    left:-750px;
+    top:50px;
+    background-color: orange;
+    color: white;
+    width: 200px;
+  }
+  #bt:hover{
+    animation: slide 6s ;
+  }
+
+  #one{
+    font-size: 25px;
+    margin-left:130px;
+    margin-top: -10px;
+
+  }
+  #two
+  {
+    font-size: 25px;
+  padding-left:5px;
+    margin-left:10px;
+  }
+  #two br{
+    display: none;
+  }
+  #bed{
+    height:300px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 500px;
+
+  }
+  .cards{
+    height:300px ;
+    overflow:visible;
+    width: 400px;
+  position: relative;
+    top: 80px;
+    left: 10px;
+  }
+ .card{
+
+   position: relative;
+   left: -250px;
+   font-size: 10px;
+   height: 200px;
+   margin: 0px;
+ }
+ .card img{
+   height: 80px;
+   width: 60px;
+ }
+ .sec{
+
+ }
+
+
+ #count{
+   height: 120px;
+   width: 180px;
+   position: relative;
+   left: 10px;
+   top:120px;
+
+ }
+ #no{
+   font-size: 40px;
+   position:relative;
+   left:-50px;
+ }
+ #ex{
+   font-size: 20px;
+ }
+#img1{
+  height: 120px;
+  position: relative;
+  width: 150px;
+  left: 10px;
+}
+
+  #img2{
+    height: 120px;
+
+    position: relative;
+    width: 150px;
+    left: 10px;
+    top:150px;
+  }
+
+  #img3{
+    height: 120px;
+    position: relative;
+    width: 150px;
+    left: 10px;
+  }
+
+  #img4{
+    height: 120px;
+    position: relative;
+    width: 150px;
+    left: 10px;
+    top: 70px;
+  }
+  #img-sec {
+    order: 2;
+  }
+
+  #write-sec {
+    order: 1;
+  }
+  #our{
+    font-size: 10px;
+  }
+
+  #we{
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  #wee{
+
+    font-size: 13px;
+    padding-top: 20px;
+    margin-top: 15px;
+
+  }
+  #sercards{
+
+    display:block;
+  }
+
+
+ #sercard{
+   height: 500px;
+   width: 180px;
+  margin:2px;
+   position: relative;
+   left: 13px;
+ }
+ .pages-in{
+   margin-left: 20px;
+   -webkit-flex-direction: column;
+ }
+#pp{
+  font-size: 10px;
+}
+.pwrite h1{
+  font-size: 20px;
+}
+.pwrite p{
+  font-size: 11px;
+}
+.tick img{
+  height: 60px;
+  margin-left: 0px;
+}
+.tick p{
+  margin-left: 10px;
+}
+.pimg img{
+   height: 360px;
+  width: 450px;
+  margin-left: -25px;
+  margin-top: 15px;
+}
+.logo p{
+  font-size: 20px;
+  position: relative;
+  margin-left: 160px;
+}
+.logoo img{
+  height: 70px;
+  position: relative;
+  left: -820px;
+}
+.profile{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -160px;
+}
+.profile img{
+  height: 300px;
+  width: 300px;
+}
+#ceo{
+
+  left:-10px;
+
+}
+#ce{
+  font-size: 30px;
+  top: -100px;
+  left: -80px;
+}
+#and{
+  font-size: 90px;
+  left: -60px;
+  top: -115px;
+}
+#found{
+  font-size: 20px;
+  top: -100px;
+  left: -200px;
+}
+.proin{
+  width:700px;
+  top:-100px;
+  right: 200px;
+}
+.proin b{
+  font-size: 20px;
+}
+#hk{
+  font-size: 20px;
+  left: -80px;
+  top: -40px;
+}
+#lin{
+  height: 40px;
+  width: 50px;
+  top: -40px;
+  right:30px;
+}
+  #ibox:hover #lin{
+    height: 40px;
+    width: 50px;
+    top: -40px;
+  }
+#hub{
+  height: 40px;
+  width: 50px;
+  right: -20px;
+}
+#ibox{
+  width: 50px;
+  height: 40px;
+}
+.blog{
+  height:650px;
+}
+.list h1{
+  font-size: 30px;
+}
+.listt{
+  left: -80px;
+}
+.album img{
+  width: 400px;
+  margin-left: -10px;
+}
+#left{
+  height: 30px;
+  left:100px;
+  z-index: 3;
+}
+#right{
+  height: 30px;
+  right:40%;
+}
+.bl{
+  margin-left: -50px;
+}
+.bl p{
+  font-size: 10px;
+}
+.bl img{
+  height:60px;
+}
+.bl-in b{
+  font-size: 10px;
+
+}
+.bl-inn{
+  margin-left: 60px;
+  left: 30px;
+  font-size: 10px;
+  display: none;
+}
+.bl-inn b{
+  font-size: 10px;
+}
+.footer{
+  display: block;
+  margin-top: -15px;
+}
+.footer h1{
+  font-size: 20px;
+  display: flex;
+  padding-left: 30px;
+  padding-top: 40px;
+}
+.footer p{
+  display: flex;
+  display: none;
+}
+.menu{
+  width: 300px;
+  right: -150px;
+}
+#co{
+  font-size: 20px;
+  right: -40px;
+}
+#tele{
+  position: relative;
+  left: -80px;
+}
+.ico img{
+  height: 30px;
+  position: relative;
+  left: -90px;
+}
+.small{
+  left: -70px;
+}
+  #b{
+    position: relative;
+    left: 70px;
+  }
+.menu2{
+  visibility: visible;
+}
+.small{
+  visibility: visible;
+}
 }

@@ -21,7 +21,7 @@ function Li() {
     };
 
     const incr = () => {
-        if (next >= 0 && next <= 5) {
+        if ( next <= 5) {
             setNext((prevNext) => {
                 const updatedNext = prevNext + 1;
                 console.log(updatedNext);
@@ -32,7 +32,7 @@ function Li() {
     };
 
     const decr = () => {
-        if (next >= 0 && next <= 5) {
+        if (next >= 0 ) {
             setNext((prevNext) => {
                 const updatedNext = prevNext - 1;
                 console.log(updatedNext);
@@ -46,7 +46,7 @@ function Li() {
     return (
         <div className="list">
             <center>
-                <p>
+                <p style={{position:"relative",left:"-10px"}}>
                     <b>OUR PROJECT</b>
                 </p>
                 <h1>RECENT PROJECT LIST</h1>

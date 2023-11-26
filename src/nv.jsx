@@ -23,6 +23,20 @@ function Nv(){
          }
       
     }
+    const men2 =()=>{
+        if(see=='invisible')
+        {
+            setsee('visible');
+            document.getElementById('menu2').style.display='block';
+            document.getElementById('menu2').style.zIndex=1002;
+
+        }
+        else{
+            setsee('invisible');
+            document.getElementById('menu2').style.display='none';
+        }
+
+    }
     return ( 
        <div className="nav" >
          <div className="com">
@@ -47,6 +61,7 @@ function Nv(){
                  CONTACT
              </h1>
          <img id="b" src="https://cdn-icons-png.flaticon.com/128/10550/10550106.png" onClick={men} style={{cursor:"pointer"}}></img>
+             <img className="small" src="https://cdn-icons-png.flaticon.com/128/56/56763.png" onClick={men2}></img>
          </div>
          <div className="menu" id="menu" >
              <span id="co">COMPANY ADDRESS</span>
@@ -68,6 +83,16 @@ function Nv(){
                </div>
              </div>
          </div>
+           <div className="menu2" id="menu2">
+
+              <p onClick={() => scrollTo("let")}> HOME</p>
+               <p onClick={() => scrollTo("ab")}>ABOUT</p>
+               <p onClick={() => scrollTo("oservice")}>  SERVICE</p>
+               <p onClick={() => scrollTo("pp")}>   PAGES</p>
+               <p onClick={() => scrollTo("kk")}> BLOG</p>
+               <p onClick={() => scrollTo("Co")}>  CONTACT</p>
+
+           </div>
        </div>
     );
 }

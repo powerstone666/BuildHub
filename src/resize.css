@@ -1,0 +1,30 @@
+@media  screen and (max-width: 900px) {
+
+    html,body{
+        overflow: visible;
+    }
+    .com{
+        display: flex;
+    }
+   #ic{
+       position: relative;
+       left:-50px;
+   }
+   #a{
+       display: none;
+   }
+   #aaa{
+       position: relative;
+       left: -80px;
+   }
+   .ho{
+       max-height:700px;
+
+   }
+   .let{
+       font-size: 10px;
+       position: relative;
+       left:-750px
+
+   }
+}

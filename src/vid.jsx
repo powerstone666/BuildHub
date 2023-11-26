@@ -1,4 +1,4 @@
-import vid from './assets/villa.mp4'
+import vid from './assets/a.mp4'
 function Vd(){
     return(
         <div className="video"><div>

@@ -25,8 +25,8 @@ function Ab(){
         <br></br>  <br></br>  <br></br>
     <p id="one">OUR FEATURES</p>
     <p id="two">
-    GET THE BEST IN <b style={{color:"orange"}}>ARCHITECTURE</b> AND<br></br>
-    INTERIOR DESIGN</p>
+    GET THE BEST IN <b style={{color:"orange"}}>ARCHITECTURE</b> AND <br></br>
+      INTERIOR DESIGN</p>
     <img id="bed" src="https://wallpaperaccess.com/full/5089977.jpg"></img>
    
 
@@ -57,12 +57,13 @@ function Ab(){
            <p id="our">OUR ABOUT US</p>
            <p id="we">WE ELEVATE THE BEAUTY</p>
            <p id="we">OF YOUR HOME</p>
-           <p id="wee" style={{fontSize:"20px"}}>Each color evokes different emotions for each individual. Your emotions still depend on your individual life experience. ipsum dolor sit amet, ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore gna aliqua quis nostrud consequat</p></b>
+           <p id="wee" >Each color evokes different emotions for each individual. Your emotions still depend on your individual life experience. ipsum dolor sit amet, ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore gna aliqua quis nostrud consequat</p></b>
            <div id="fle">
+               <b>
             <ol>1. Quality Architect Designs</ol>
             <ol>2.100% Satisfaction Guarantee</ol>
             <ol>3.Highly Professional Members</ol>
-            <ol>4.Deliver Always on Time</ol>
+                   <ol>4.Deliver Always on Time</ol></b>
             <img id="left-a" src="https://th.bing.com/th/id/OIP.CbRIgXm5ZMyNimuPgt1wjAHaEo?w=274&h=180&c=7&r=0&o=5&pid=1.7" style={{cursor:"pointer"}}></img>
            </div>
         </section>

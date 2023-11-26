@@ -1,8 +1,11 @@
 import myself from './assets/web.jpeg';
 function Bl(){
-    const take=()=>{
-        window.location.href=('www.linkedin.com/in/imranpasha636');
-    }
+const github=()=>{
+    window.open("https://github.com/powerstone666/BuildHub", "_blank");
+}
+const linked=()=>{
+    window.open("https://www.linkedin.com/in/imranpasha636/","_blank");
+}
     return(
         <div className="blog">
             <div className="logo" id="kkk">
@@ -28,11 +31,14 @@ function Bl(){
                     </div>
                 <div className="profile">
                     <img src={myself}></img>
-                     <div id="proin" >
-                         <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" onClick={take} style={{cursor:"pointer"}}></img>
+                     <div className="proin" >
+                         <div id="ibox">
+                         <img src=" https://cdn-icons-png.flaticon.com/128/1051/1051275.png"  style={{cursor:"pointer"}} id="hub" onClick={github}></img>
+                         <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"  style={{cursor:"pointer"}} id="lin" onClick={linked}></img>
+                         </div>
                          <b>IMRAN PASHA</b>
                          <br></br>
-                         <p id="hk">HKBK COLLEGE OF ENGINEERING</p>
+                         <p id="hk">FULL STACK DEVELOPER</p>
                      </div>
                 </div>
                     </center>
